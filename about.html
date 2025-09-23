@@ -25,25 +25,26 @@
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <a href="index.html">AI Agency</a>
+                <a href="index.html">BUILDFAST</a>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="about.html" class="nav-link active">About</a>
-                <a href="case-study.html" class="nav-link">Case Studies</a>
-                <a href="blogs.html" class="nav-link">Blog</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+                <a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
+                <a href="about.html" class="nav-link active" data-i18n="nav.about">About</a>
+                <a href="blogs.html" class="nav-link" data-i18n="nav.blog">Blog</a>
+                <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
                 <button id="theme-toggle" class="theme-toggle theme-toggle-desktop" aria-label="Toggle theme">
                     <span class="moon">🌙</span>
                     <span class="sun">☀️</span>
                 </button>
+                <button id="lang-toggle" class="lang-toggle lang-toggle-desktop" aria-label="Toggle language">EN</button>
             </div>
             <div class="nav-actions">
                 <button id="theme-toggle-mobile" class="theme-toggle theme-toggle-mobile" aria-label="Toggle theme">
                     <span class="moon">🌙</span>
                     <span class="sun">☀️</span>
                 </button>
+                <button id="lang-toggle-mobile" class="lang-toggle lang-toggle-mobile" aria-label="Toggle language">EN</button>
                 <div class="nav-toggle" id="nav-toggle">
                     <span></span>
                     <span></span>
@@ -56,229 +57,60 @@
     <main>
         <section class="page-hero">
             <div class="container">
-                <h1 class="page-title">About AI Agency</h1>
-                <p class="page-subtitle">We're a team of AI experts, engineers, and innovators dedicated to transforming businesses through artificial intelligence</p>
+              <h1 class="page-title"><span data-i18n="about.title">About Us</span> <span class="highlight"></span></h1>
+              <p class="page-subtitle" data-i18n="about.subtitle">
+                We are passionate innovators, helping businesses unlock the power of AI to 
+                automate, scale, and transform their operations.
+              </p>
             </div>
-        </section>
-
-        <section class="mission-vision">
-            <div class="container">
-                <div class="mission-vision-grid">
-                    <div class="mission-card">
-                        <div class="mission-icon">🎯</div>
-                        <h2>Our Mission</h2>
-                        <p>To democratize artificial intelligence by making advanced AI solutions accessible, affordable, and actionable for businesses of all sizes. We believe AI should empower human potential, not replace it.</p>
-                    </div>
-                    <div class="vision-card">
-                        <div class="vision-icon">🚀</div>
-                        <h2>Our Vision</h2>
-                        <p>To become the leading AI transformation partner globally, helping organizations unlock unprecedented efficiency, innovation, and growth through intelligent automation and data-driven insights.</p>
-                    </div>
+          </section>
+          
+          <!-- About Section -->
+          <section class="about-section">
+            <div class="container about-content">
+              <div class="about-text">
+                <h2 data-i18n="about.who.title">Who We Are</h2>
+                <p data-i18n="about.who.p1">
+                  Our agency specializes in developing AI-driven solutions that empower organizations 
+                  to stay ahead in the digital era. From predictive analytics to intelligent chatbots, 
+                  we craft tools that solve real business challenges.
+                </p>
+                <p data-i18n="about.who.p2">
+                  With a team of skilled engineers, data scientists, and designers, we blend creativity 
+                  with technology to deliver impactful experiences. We believe AI should be accessible, 
+                  practical, and human-centered.
+                </p>
+                <a href="services.html" class="btn btn-primary" data-i18n="home.hero.cta.secondary">Explore Our Services</a>
+              </div>
+              <div class="about-visual">
+                <div class="about-image-placeholder">
+                  <span class="ai-animation"></span>
                 </div>
+              </div>
             </div>
-        </section>
-
-        <section class="company-stats">
+          </section>
+          
+          <!-- Values Section -->
+          <section class="values-section">
             <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-number">500+</div>
-                        <div class="stat-label">Projects Completed</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">150+</div>
-                        <div class="stat-label">Happy Clients</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">99%</div>
-                        <div class="stat-label">Client Satisfaction</div>
-                    </div>
+              <h2 class="section-title" data-i18n="about.values.title">Our Core Values</h2>
+              <p class="section-subtitle" data-i18n="about.values.subtitle">The principles that guide our work and relationships.</p>
+              <div class="values-grid">
+                <div class="value-card">
+                  <h3 data-i18n="about.values.innovation">Innovation</h3>
+                  <p data-i18n="about.values.innovation.desc">We push boundaries, delivering cutting-edge AI solutions that inspire growth.</p>
                 </div>
-            </div>
-        </section>
-
-        <section class="team-section">
-            <div class="container">
-                <h2 class="section-title">Meet Our Team</h2>
-                <p class="section-subtitle">Our diverse team of AI specialists, data scientists, and engineers</p>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <div class="member-photo"></div>
-                        <h3>Sarah Chen</h3>
-                        <p class="member-role">CEO & AI Strategist</p>
-                        <p class="member-bio">Former Google AI researcher with 10+ years in machine learning and business transformation.</p>
-                        <div class="member-social">
-                            <a href="#" class="social-link">💼</a>
-                            <a href="#" class="social-link">🐦</a>
-                        </div>
-                    </div>
-
-                    <div class="team-member">
-                        <div class="member-photo"></div>
-                        <h3>Marcus Rodriguez</h3>
-                        <p class="member-role">CTO & Lead Engineer</p>
-                        <p class="member-bio">Full-stack developer and AI engineer specializing in scalable machine learning systems.</p>
-                        <div class="member-social">
-                            <a href="#" class="social-link">💼</a>
-                            <a href="#" class="social-link">🐦</a>
-                        </div>
-                    </div>
-
-                    <div class="team-member">
-                        <div class="member-photo"></div>
-                        <h3>Dr. Amelia Watson</h3>
-                        <p class="member-role">Head of Data Science</p>
-                        <p class="member-bio">PhD in Computer Science with expertise in NLP, computer vision, and predictive analytics.</p>
-                        <div class="member-social">
-                            <a href="#" class="social-link">💼</a>
-                            <a href="#" class="social-link">🐦</a>
-                        </div>
-                    </div>
-
-                    <div class="team-member">
-                        <div class="member-photo"></div>
-                        <h3>James Kim</h3>
-                        <p class="member-role">Product Manager</p>
-                        <p class="member-bio">Product strategist with experience launching AI products at Fortune 500 companies.</p>
-                        <div class="member-social">
-                            <a href="#" class="social-link">💼</a>
-                            <a href="#" class="social-link">🐦</a>
-                        </div>
-                    </div>
-
-                    <div class="team-member">
-                        <div class="member-photo"></div>
-                        <h3>Lisa Thompson</h3>
-                        <p class="member-role">UX/UI Designer</p>
-                        <p class="member-bio">Creative designer focused on making AI interfaces intuitive and user-friendly.</p>
-                        <div class="member-social">
-                            <a href="#" class="social-link">💼</a>
-                            <a href="#" class="social-link">🐦</a>
-                        </div>
-                    </div>
-
-                    <div class="team-member">
-                        <div class="member-photo"></div>
-                        <h3>David Park</h3>
-                        <p class="member-role">DevOps Engineer</p>
-                        <p class="member-bio">Infrastructure specialist ensuring our AI solutions scale reliably and securely.</p>
-                        <div class="member-social">
-                            <a href="#" class="social-link">💼</a>
-                            <a href="#" class="social-link">🐦</a>
-                        </div>
-                    </div>
+                <div class="value-card">
+                  <h3 data-i18n="about.values.collaboration">Collaboration</h3>
+                  <p data-i18n="about.values.collaboration.desc">We work closely with our clients, ensuring solutions are tailored to their needs.</p>
                 </div>
-            </div>
-        </section>
-
-        <section class="journey-timeline">
-            <div class="container">
-                <h2 class="section-title">Our Journey</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <span>2019</span>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Company Founded</h3>
-                            <p>AI Agency was founded with a vision to make AI accessible to businesses of all sizes. Started with a small team of AI researchers and engineers.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <span>2020</span>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>First AI Chatbot Platform</h3>
-                            <p>Launched our flagship chatbot platform, helping over 50 businesses automate their customer service operations during the pandemic.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <span>2021</span>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Workflow Automation Suite</h3>
-                            <p>Expanded our services to include comprehensive workflow automation, serving Fortune 500 companies and startups alike.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <span>2022</span>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>AI Content Tools Launch</h3>
-                            <p>Released our AI-powered content generation suite, revolutionizing how businesses create and manage their content strategies.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <span>2023</span>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Advanced Analytics Platform</h3>
-                            <p>Introduced predictive analytics and business intelligence tools, helping clients make data-driven decisions with AI insights.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <span>2024</span>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Global Expansion</h3>
-                            <p>Reached 150+ clients worldwide and established partnerships with major cloud providers to scale our AI solutions globally.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <span>2025</span>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Next-Gen AI Platform</h3>
-                            <p>Launching our unified AI platform that integrates all our services into one comprehensive solution for enterprise clients.</p>
-                        </div>
-                    </div>
+                <div class="value-card">
+                  <h3 data-i18n="about.values.impact">Impact</h3>
+                  <p data-i18n="about.values.impact.desc">We create technology that not only benefits businesses but also society at large.</p>
                 </div>
+              </div>
             </div>
-        </section>
-
-        <section class="values-section">
-            <div class="container">
-                <h2 class="section-title">Our Values</h2>
-                <div class="values-grid">
-                    <div class="value-card">
-                        <div class="value-icon">🔍</div>
-                        <h3>Innovation</h3>
-                        <p>We constantly explore cutting-edge AI technologies to deliver breakthrough solutions that give our clients a competitive advantage.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🤝</div>
-                        <h3>Partnership</h3>
-                        <p>We work closely with our clients as trusted partners, understanding their unique challenges and co-creating tailored solutions.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🛡️</div>
-                        <h3>Ethics</h3>
-                        <p>We prioritize responsible AI development, ensuring our solutions are fair, transparent, and aligned with human values.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🎯</div>
-                        <h3>Excellence</h3>
-                        <p>We maintain the highest standards in everything we do, from code quality to customer service and project delivery.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+          </section>
 
         <section class="cta-section">
             <div class="container">
@@ -312,16 +144,14 @@
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul class="footer-links">
-                        <li><a href="services.html">AI Automation</a></li>
-                        <li><a href="services.html">Website Development</a></li>
-                        <li><a href="services.html">Web Application</a></li>
-                        <li><a href="services.html">Chatbots</a></li>
-                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="AI Automation.html">AI Automation</a></li>
+                        <li><a href="Website Development.html">Website Development</a></li>
+                        <li><a href="Web Application.html">Web Application</a></li>
+                        <li><a href="Chatbots.html">Chatbots</a></li>
+                        <li><a href="Digital Marketing.html">Digital Marketing</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-links">
                     <a href="" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -342,7 +172,7 @@
     <style>
 .floating-chatbot {
   position: fixed;
-  bottom: 16px;
+  bottom: 50px;
   right: 50px;
   z-index: 9999;
 }
@@ -580,6 +410,7 @@
       });
     });
   </script>
+  <script src="js/i18n.js"></script>
   <script src="js/chatbot.js"></script>
   <script>
     // Minimal form validation

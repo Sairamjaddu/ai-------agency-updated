@@ -159,9 +159,11 @@
     const art = document.createElement('article');
     art.className = 'blog-post-card';
     art.innerHTML = `
+      <div class="post-image-placeholder">
+        <span class="post-category-badge">${categoryLabel(post.category)}</span>
+      </div>
       <div class="post-content">
         <div class="post-meta">
-          <span class="post-category-badge">${categoryLabel(post.category)}</span>
           <span class="post-date">${new Date().toLocaleDateString()}</span>
           <span class="read-time">6 min read</span>
         </div>
@@ -170,38 +172,67 @@
         <div class="post-author-mini">
           <span>By Editorial Team</span>
         </div>
-        <button class="read-more" aria-expanded="false">Read More →</button>
-        <div class="post-full" style="display:none; margin-top:8px;">${formatContentToHTML(post.content)}</div>
+        <button class="read-more btn btn-primary" aria-expanded="false">Read More →</button>
       </div>
     `;
     const btn = art.querySelector('.read-more');
-    const full = art.querySelector('.post-full');
-    btn.addEventListener('click', () => {
-      const isOpen = full.style.display === 'block';
-      full.style.display = isOpen ? 'none' : 'block';
-      btn.textContent = isOpen ? 'Read More →' : 'Show Less ↑';
-      btn.setAttribute('aria-expanded', String(!isOpen));
-      if (!isOpen) history.replaceState({}, '', `#/blog/${post.slug}`);
-    });
+    btn.addEventListener('click', () => { setRoute(post.slug); });
     return art;
+  }
+  
+
+  function renderPost(slug) {
+    const post = POSTS.find(p => p.slug === slug);
+    gridEl.innerHTML = '';
+    if (!post) {
+      const nf = document.createElement('div');
+      nf.className = 'blog-post-card';
+      nf.innerHTML = `<div class="post-content"><h3>Post not found</h3><p>The article you are looking for does not exist.</p><p><a href="#/blog" class="btn-link">← Back to all posts</a></p></div>`;
+      gridEl.appendChild(nf);
+      window.scrollTo(0, 0);   // ⬅ scroll to top even on "not found"
+      return;
+    }
+    const art = document.createElement('article');
+    art.className = 'blog-post-card';
+    art.innerHTML = `
+      <div class="post-image-placeholder">
+        <span class="post-category-badge">${categoryLabel(post.category)}</span>
+      </div>
+      <div class="post-content">
+        <div class="post-meta">
+          <span class="post-date">${new Date().toLocaleDateString()}</span>
+          <span class="read-time">8 min read</span>
+        </div>
+        <h2>${post.title}</h2>
+        <div class="post-author-mini"><span>By Editorial Team</span></div>
+        <div style="margin:16px 0;">
+          <a href="#/blog" class="btn-link">← Back to all posts</a>
+        </div>
+        <div class="post-full">${formatContentToHTML(post.content)}</div>
+        <div style="margin-top:16px;">
+          <a href="#/blog" class="btn-link">← Back to all posts</a>
+        </div>
+      </div>
+    `;
+    gridEl.appendChild(art);
+    // ✅ Force top when a post is loaded
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   function route() {
     const slug = getRouteSlug();
-    renderGrid('all');
-    if (!slug) return;
-    const link = gridEl.querySelector(`a[href="#/blog/${slug}"]`);
-    if (link) {
-      link.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      const cardEl = link.closest('.blog-post-card');
-      if (cardEl) {
-        const btn = cardEl.querySelector('.read-more');
-        const full = cardEl.querySelector('.post-full');
-        if (btn && full) { full.style.display = 'block'; btn.textContent = 'Show Less ↑'; btn.setAttribute('aria-expanded','true'); }
-      }
+    if (slug) {
+      renderCategories('all');
+      renderTags();
+      renderPost(slug);
+      return;
     }
+    renderGrid('all');
   }
 
   window.addEventListener('hashchange', route);
   route();
 })();
+
+
+

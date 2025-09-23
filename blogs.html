@@ -25,25 +25,26 @@
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <a href="index.html">AI Agency</a>
+                <a href="index.html">BUILDFAST</a>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="case-study.html" class="nav-link">Case Studies</a>
-                <a href="blogs.html" class="nav-link active">Blog</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+                <a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
+                <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+                <a href="blogs.html" class="nav-link active" data-i18n="nav.blog">Blog</a>
+                <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
                 <button id="theme-toggle" class="theme-toggle theme-toggle-desktop" aria-label="Toggle theme">
                     <span class="moon">🌙</span>
                     <span class="sun">☀️</span>
                 </button>
+                <button id="lang-toggle" class="lang-toggle lang-toggle-desktop" aria-label="Toggle language">EN</button>
             </div>
             <div class="nav-actions">
                 <button id="theme-toggle-mobile" class="theme-toggle theme-toggle-mobile" aria-label="Toggle theme">
                     <span class="moon">🌙</span>
                     <span class="sun">☀️</span>
                 </button>
+                <button id="lang-toggle-mobile" class="lang-toggle lang-toggle-mobile" aria-label="Toggle language">EN</button>
                 <div class="nav-toggle" id="nav-toggle">
                     <span></span>
                     <span></span>
@@ -56,253 +57,48 @@
     <main>
         <section class="page-hero">
             <div class="container">
-                <div class="page-hero-content">
-                    <h1>AI Insights & Trends</h1>
-                    <p>Stay updated with the latest developments in artificial intelligence and business transformation</p>
+                <h1 class="page-title" data-i18n="blogs.title">AI Insights & Updates</h1>
+                <p class="page-subtitle" data-i18n="blogs.subtitle">Stay ahead of the curve with expert insights, industry trends, and practical guides from our specialists</p>
+            </div>
+        </section>
+
+        <section class="blog-grid-section">
+            <div class="container">
+                <div class="blog-sidebar">
+                    <div class="sidebar-section">
+                        <h3 data-i18n="blogs.categories">Categories</h3>
+                        <ul class="category-list" id="category-list">
+                            <!-- Populated by js/blogs.js -->
+                        </ul>
+                    </div>
+                    <div class="sidebar-section" id="toc">
+                        <h3 data-i18n="blogs.quicknav">Quick Navigation</h3>
+                        <div class="tag-cloud" id="tag-cloud">
+                            <!-- Tags populated by js/blogs.js -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-main">
+                    <div class="blog-posts-grid" id="blog-posts-grid">
+                        <!-- Populated by js/blogs.js -->
+                    </div>
+
+                    <div class="pagination" id="pagination" style="display:none;"></div>
                 </div>
             </div>
         </section>
 
-        <section class="blog-grid">
+        <section class="newsletter-section">
             <div class="container">
-                <div class="blog-posts-grid">
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI automation trends" loading="lazy">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">January 15, 2025</span>
-                                <span class="blog-author">by Dr. Sarah Chen</span>
-                            </div>
-                            <h3>The Future of AI Automation in 2025</h3>
-                            <p>Discover the latest trends in AI automation and how they're reshaping business processes across industries. From intelligent process automation...</p>
-                            <div class="blog-tags">
-                                <span class="tag">Automation</span>
-                                <span class="tag">Trends</span>
-                            </div>
-                            <a href="contact.html" class="read-more">Read More</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Machine learning guide" loading="lazy">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">January 10, 2025</span>
-                                <span class="blog-author">by Michael Rodriguez</span>
-                            </div>
-                            <h3>A Beginner's Guide to Machine Learning</h3>
-                            <p>Learn the fundamentals of machine learning and how businesses can leverage these powerful algorithms to gain competitive advantages...</p>
-                            <div class="blog-tags">
-                                <span class="tag">Tutorial</span>
-                                <span class="tag">ML</span>
-                            </div>
-                            <a href="contact.html" class="read-more">Read More</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="https://images.pexels.com/photos/3850362/pexels-photo-3850362.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI in healthcare" loading="lazy">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">January 5, 2025</span>
-                                <span class="blog-author">by Dr. Emily Watson</span>
-                            </div>
-                            <h3>Revolutionizing Healthcare with AI</h3>
-                            <p>Explore how artificial intelligence is transforming healthcare delivery, improving patient outcomes, and reducing costs through innovative...</p>
-                            <div class="blog-tags">
-                                <span class="tag">Healthcare</span>
-                                <span class="tag">Innovation</span>
-                            </div>
-                            <a href="contact.html" class="read-more">Read More</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="https://images.pexels.com/photos/3966425/pexels-photo-3966425.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI ethics discussion" loading="lazy">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">December 28, 2024</span>
-                                <span class="blog-author">by Alex Thompson</span>
-                            </div>
-                            <h3>Ethical AI Development: Best Practices</h3>
-                            <p>Understanding the importance of ethical considerations in AI development and how to implement responsible AI practices in your organization...</p>
-                            <div class="blog-tags">
-                                <span class="tag">Ethics</span>
-                                <span class="tag">Best Practices</span>
-                            </div>
-                            <a href="contact.html" class="read-more">Read More</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="https://images.pexels.com/photos/3845986/pexels-photo-3845986.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Natural language processing" loading="lazy">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">December 22, 2024</span>
-                                <span class="blog-author">by Dr. Sarah Chen</span>
-                            </div>
-                            <h3>Natural Language Processing Breakthroughs</h3>
-                            <p>Recent advances in NLP technology and their practical applications for businesses looking to improve customer communication and content...</p>
-                            <div class="blog-tags">
-                                <span class="tag">NLP</span>
-                                <span class="tag">Technology</span>
-                            </div>
-                            <a href="contact.html" class="read-more">Read More</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="https://images.pexels.com/photos/3823491/pexels-photo-3823491.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI ROI analysis" loading="lazy">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">December 18, 2024</span>
-                                <span class="blog-author">by Michael Rodriguez</span>
-                            </div>
-                            <h3>Calculating ROI from AI Investments</h3>
-                            <p>A comprehensive guide to measuring the return on investment from AI initiatives and understanding the long-term business value of artificial...</p>
-                            <div class="blog-tags">
-                                <span class="tag">Business</span>
-                                <span class="tag">ROI</span>
-                            </div>
-                            <a href="contact.html" class="read-more">Read More</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="https://images.pexels.com/photos/3862634/pexels-photo-3862634.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Computer vision applications" loading="lazy">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">December 12, 2024</span>
-                                <span class="blog-author">by Dr. Emily Watson</span>
-                            </div>
-                            <h3>Computer Vision in Manufacturing</h3>
-                            <p>How computer vision technology is revolutionizing quality control, predictive maintenance, and safety monitoring in modern manufacturing...</p>
-                            <div class="blog-tags">
-                                <span class="tag">Computer Vision</span>
-                                <span class="tag">Manufacturing</span>
-                            </div>
-                            <a href="contact.html" class="read-more">Read More</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="https://images.pexels.com/photos/3850363/pexels-photo-3850363.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI strategy planning" loading="lazy">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">December 8, 2024</span>
-                                <span class="blog-author">by Alex Thompson</span>
-                            </div>
-                            <h3>Building Your AI Strategy in 2025</h3>
-                            <p>Essential steps for developing a comprehensive AI strategy that aligns with business objectives and drives sustainable competitive advantage...</p>
-                            <div class="blog-tags">
-                                <span class="tag">Strategy</span>
-                                <span class="tag">Planning</span>
-                            </div>
-                            <a href="contact.html" class="read-more">Read More</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Data science insights" loading="lazy">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">December 1, 2024</span>
-                                <span class="blog-author">by Dr. Sarah Chen</span>
-                            </div>
-                            <h3>Data Science vs. AI: Understanding the Difference</h3>
-                            <p>Clear explanations of how data science and AI complement each other and when to apply each approach for maximum business impact...</p>
-                            <div class="blog-tags">
-                                <span class="tag">Data Science</span>
-                                <span class="tag">Education</span>
-                            </div>
-                            <a href="contact.html" class="read-more">Read More</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI implementation guide" loading="lazy">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">November 25, 2024</span>
-                                <span class="blog-author">by Michael Rodriguez</span>
-                            </div>
-                            <h3>Common AI Implementation Mistakes to Avoid</h3>
-                            <p>Learn from the most common pitfalls in AI implementation and discover proven strategies for successful AI adoption in your organization...</p>
-                            <div class="blog-tags">
-                                <span class="tag">Implementation</span>
-                                <span class="tag">Best Practices</span>
-                            </div>
-                            <a href="contact.html" class="read-more">Read More</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="https://images.pexels.com/photos/3862635/pexels-photo-3862635.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI future predictions" loading="lazy">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">November 18, 2024</span>
-                                <span class="blog-author">by Dr. Emily Watson</span>
-                            </div>
-                            <h3>AI Predictions for the Next Decade</h3>
-                            <p>Expert analysis of where AI technology is heading and what businesses need to prepare for in the rapidly evolving artificial intelligence landscape...</p>
-                            <div class="blog-tags">
-                                <span class="tag">Predictions</span>
-                                <span class="tag">Future Tech</span>
-                            </div>
-                            <a href="contact.html" class="read-more">Read More</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="https://images.pexels.com/photos/3966421/pexels-photo-3966421.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI chatbot development" loading="lazy">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">November 12, 2024</span>
-                                <span class="blog-author">by Alex Thompson</span>
-                            </div>
-                            <h3>Building Effective AI Chatbots</h3>
-                            <p>Step-by-step guide to creating AI chatbots that actually improve customer experience and deliver measurable business results...</p>
-                            <div class="blog-tags">
-                                <span class="tag">Chatbots</span>
-                                <span class="tag">Tutorial</span>
-                            </div>
-                            <a href="contact.html" class="read-more">Read More</a>
-                        </div>
-                    </article>
-                </div>
-                
-                <div class="pagination">
-                    <button class="pagination-btn" disabled>Previous</button>
-                    <div class="pagination-numbers">
-                        <button class="pagination-number active">1</button>
-                        <button class="pagination-number">2</button>
-                        <button class="pagination-number">3</button>
-                    </div>
-                    <button class="pagination-btn">Next</button>
+                <div class="newsletter-content">
+                    <h2 data-i18n="blogs.newsletter.title">Stay Updated with AI Trends</h2>
+                    <p data-i18n="blogs.newsletter.desc">Get the latest AI insights, industry updates, and exclusive content delivered to your inbox weekly.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary" data-i18n="blogs.newsletter.cta">Subscribe</button>
+                    </form>
+                    <p class="newsletter-privacy" data-i18n="blogs.newsletter.privacy">We respect your privacy. Unsubscribe at any time.</p>
                 </div>
             </div>
         </section>
@@ -329,16 +125,14 @@
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul class="footer-links">
-                        <li><a href="services.html">AI Automation</a></li>
-                        <li><a href="services.html">Website Development</a></li>
-                        <li><a href="services.html">Web Application</a></li>
-                        <li><a href="services.html">Chatbots</a></li>
-                        <li><a href="services.html">Digital Marketing</a></li>
-                    </ul>
+                      <li><a href="AI Automation.html">AI Automation</a></li>
+                      <li><a href="Website Development.html">Website Development</a></li>
+                      <li><a href="Web Application.html">Web Application</a></li>
+                      <li><a href="Chatbots.html">Chatbots</a></li>
+                      <li><a href="Digital Marketing.html">Digital Marketing</a></li>
+                  </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-links">
                     <a href="" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -359,7 +153,7 @@
     <style>
 .floating-chatbot {
   position: fixed;
-  bottom: 16px;
+  bottom: 50px;
   right: 50px;
   z-index: 9999;
 }
@@ -612,5 +406,7 @@
       }
     });
   </script> 
+  <script src="js/i18n.js"></script>
+  <script src="js/blogs.js"></script>
 </body>
 </html>

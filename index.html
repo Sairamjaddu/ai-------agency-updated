@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Agency - Transforming Business with Artificial Intelligence</title>
+    <title>BUILDFAST - Transforming Business with Artificial Intelligence</title>
     <meta name="description" content="Leading AI agency specializing in chatbots, workflow automation, and AI-powered tools to transform your business.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,25 +25,26 @@
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <a href="index.html">AI Agency</a>
+                <a href="index.html">BUILDFAST</a>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="case-study.html" class="nav-link">Case Studies</a>
-                <a href="blogs.html" class="nav-link">Blog</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a>
+                <a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
+                <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+                <a href="blogs.html" class="nav-link" data-i18n="nav.blog">Blog</a>
+                <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
                 <button id="theme-toggle" class="theme-toggle theme-toggle-desktop" aria-label="Toggle theme">
                     <span class="moon">🌙</span>
                     <span class="sun">☀️</span>                    
                 </button>
+                <button id="lang-toggle" class="lang-toggle lang-toggle-desktop" aria-label="Toggle language">EN</button>
             </div>
             <div class="nav-actions">
                 <button id="theme-toggle-mobile" class="theme-toggle theme-toggle-mobile" aria-label="Toggle theme">
                     <span class="moon">🌙</span>
                     <span class="sun">☀️</span>
                 </button>
+                <button id="lang-toggle-mobile" class="lang-toggle lang-toggle-mobile" aria-label="Toggle language">EN</button>
                 <div class="nav-toggle" id="nav-toggle">
                     <span></span>
                     <span></span>
@@ -58,11 +59,11 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-title">Transform Your Business with <span class="highlight">AI Innovation</span></h1>
-                    <p class="hero-subtitle">We help companies leverage cutting-edge artificial intelligence to automate workflows, enhance customer experiences, and drive unprecedented growth.</p>
+                    <h1 class="hero-title" data-i18n="home.hero.title">Transform Your Business with <span class="highlight">AI Innovation</span></h1>
+                    <p class="hero-subtitle" data-i18n="home.hero.subtitle">We help companies leverage cutting-edge artificial intelligence to automate workflows, enhance customer experiences, and drive unprecedented growth.</p>
                     <div class="hero-cta">
-                        <a href="#contact" class="btn btn-primary">Get Started Today</a>
-                        <a href="services.html" class="btn btn-secondary">Explore Services</a>
+                        <a href="contact.html" class="btn btn-primary" data-i18n="home.hero.cta.primary">Get Started Today</a>
+                        <a href="services.html" class="btn btn-secondary" data-i18n="home.hero.cta.secondary">Explore Services</a>
                     </div>
                 </div>
             </div>
@@ -71,33 +72,33 @@
         <!-- Services Preview -->
         <section class="services-preview">
             <div class="container">
-                <h2 class="section-title">Our AI Solutions</h2>
-                <p class="section-subtitle">Discover how our AI services can transform your business operations</p>
+                <h2 class="section-title" data-i18n="home.services.title">Our AI Solutions</h2>
+                <p class="section-subtitle" data-i18n="home.services.subtitle">Discover how our AI services can transform your business operations</p>
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-icon">⚙️</div>
-                        <h3>AI Automation</h3>
-                        <p>Automate workflows and operations with intelligent, reliable AI-driven processes.</p>
+                        <div class="service-icon"></div>
+                        <h3 data-i18n="home.services.ai_automation.title">AI Automation</h3>
+                        <p data-i18n="home.services.ai_automation.desc">Automate workflows and operations with intelligent, reliable AI-driven processes.</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">🌐</div>
-                        <h3>Website Development</h3>
-                        <p>Modern, fast, and responsive websites optimized for SEO and conversions.</p>
+                        <div class="service-icon"></div>
+                        <h3 data-i18n="home.services.website.title">Website Development</h3>
+                        <p data-i18n="home.services.website.desc">Modern, fast, and responsive websites optimized for SEO and conversions.</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">🧩</div>
-                        <h3>Web Application</h3>
-                        <p>Secure, scalable web apps and dashboards tailored to your business needs.</p>
+                        <div class="service-icon"></div>
+                        <h3 data-i18n="home.services.webapp.title">Web Application</h3>
+                        <p data-i18n="home.services.webapp.desc">Secure, scalable web apps and dashboards tailored to your business needs.</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">🤖</div>
-                        <h3>Chatbots</h3>
-                        <p>24/7 assistants for support, lead qualification, and guided workflows.</p>
+                        <div class="service-icon"></div>
+                        <h3 data-i18n="home.services.chatbots.title">Chatbots</h3>
+                        <p data-i18n="home.services.chatbots.desc">24/7 assistants for support, lead qualification, and guided workflows.</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">📈</div>
-                        <h3>Digital Marketing</h3>
-                        <p>SEO, ads, content, and funnel optimization to drive measurable growth.</p>
+                        <div class="service-icon"></div>
+                        <h3 data-i18n="home.services.marketing.title">Digital Marketing</h3>
+                        <p data-i18n="home.services.marketing.desc">SEO, ads, content, and funnel optimization to drive measurable growth.</p>
                     </div>
                 </div>
             </div>
@@ -106,11 +107,11 @@
         <!-- Tool Preview -->
         <section class="tool-preview">
             <div class="container">
-                <h2 class="section-title">Featured AI Tools</h2>
-                <p class="section-subtitle">Try our cutting-edge AI tools designed for modern businesses</p>
+                <h2 class="section-title" data-i18n="home.tools.title">Featured AI Tools</h2>
+                <p class="section-subtitle" data-i18n="home.tools.subtitle">Try our cutting-edge AI tools designed for modern businesses</p>
                 <div class="tool-showcase">
                     <div class="tool-demo">
-                        <h3>AI Assistant Demo</h3>
+                        <h3 data-i18n="home.tools.assistant.title">AI Assistant Demo</h3>
                         <div class="demo-placeholder">
                             <p>Interactive AI tool would be embedded here</p>
                             <div class="demo-visual">
@@ -122,7 +123,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="tool.html" class="btn btn-primary">Explore All Tools</a>
+                        <a href="tool.html" class="btn btn-primary" data-i18n="home.tools.explore">Explore All Tools</a>
                     </div>
                 </div>
             </div>
@@ -131,11 +132,11 @@
         <!-- Testimonials -->
         <section class="testimonials">
             <div class="container">
-                <h2 class="section-title">What Our Clients Say</h2>
+                <h2 class="section-title" data-i18n="home.testimonials.title">What Our Clients Say</h2>
                 <div class="testimonials-grid">
                     <div class="testimonial-card">
                         <div class="testimonial-content">
-                            <p>"AI Agency transformed our customer service with their intelligent chatbot. We've seen a 40% reduction in support tickets."</p>
+                            <p data-i18n="home.testimonials.q1">"AI Agency transformed our customer service with their intelligent chatbot. We've seen a 40% reduction in support tickets."</p>
                         </div>
                         <div class="testimonial-author">
                             <div class="author-avatar"></div>
@@ -147,7 +148,7 @@
                     </div>
                     <div class="testimonial-card">
                         <div class="testimonial-content">
-                            <p>"The workflow automation solution saved us 20 hours per week. ROI was achieved within the first month."</p>
+                            <p data-i18n="home.testimonials.q2">"The workflow automation solution saved us 20 hours per week. ROI was achieved within the first month."</p>
                         </div>
                         <div class="testimonial-author">
                             <div class="author-avatar"></div>
@@ -159,7 +160,7 @@
                     </div>
                     <div class="testimonial-card">
                         <div class="testimonial-content">
-                            <p>"Their AI content tools helped us scale our content production by 300% while maintaining quality."</p>
+                            <p data-i18n="home.testimonials.q3">"Their AI content tools helped us scale our content production by 300% while maintaining quality."</p>
                         </div>
                         <div class="testimonial-author">
                             <div class="author-avatar"></div>
@@ -177,9 +178,9 @@
         <section class="cta-section">
             <div class="container">
                 <div class="cta-content">
-                    <h2>Ready to Transform Your Business?</h2>
-                    <p>Join hundreds of companies already using our AI solutions to drive growth and efficiency.</p>
-                    <a href="#contact" class="btn btn-primary">Start Your AI Journey</a>
+                    <h2 data-i18n="home.cta.title">Ready to Transform Your Business?</h2>
+                    <p data-i18n="home.cta.subtitle">Join hundreds of companies already using our AI solutions to drive growth and efficiency.</p>
+                    <a href="#contact" class="btn btn-primary" data-i18n="home.cta.button">Start Your AI Journey</a>
                 </div>
             </div>
         </section>
@@ -187,45 +188,45 @@
         <!-- Contact Form -->
         <section id="contact" class="contact-section">
             <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Ready to discuss your AI project? We're here to help.</p>
+                <h2 class="section-title" data-i18n="home.contact.title">Get In Touch</h2>
+                <p class="section-subtitle" data-i18n="home.contact.subtitle">Ready to discuss your AI project? We're here to help.</p>
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h3>Let's Talk</h3>
-                        <p>We'd love to hear about your project and how we can help you achieve your goals with AI.</p>
+                        <h3 data-i18n="home.contact.lets_talk">Let's Talk</h3>
+                        <p data-i18n="home.contact.desc">We'd love to hear about your project and how we can help you achieve your goals with AI.</p>
                         <div class="contact-details">
                             <div class="contact-item">
-                                <span class="contact-icon">📧</span>
-                                <span>hello@aiagency.com</span>
+                                <span class="contact-icon"></span>
+                                <span data-i18n="home.contact.email">hello@aiagency.com</span>
                             </div>
                             <div class="contact-item">
-                                <span class="contact-icon">📞</span>
-                                <span>+1 (555) 123-4567</span>
+                                <span class="contact-icon"></span>
+                                <span data-i18n="home.contact.phone">+1 (555) 123-4567</span>
                             </div>
                             <div class="contact-item">
-                                <span class="contact-icon">📍</span>
-                                <span>San Francisco, CA</span>
+                                <span class="contact-icon"></span>
+                                <span data-i18n="home.contact.city">San Francisco, CA</span>
                             </div>
                         </div>
                     </div>
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="name" data-i18n="form.name.label">Name *</label>
+                            <input type="text" id="name" name="name" required data-i18n-placeholder="ph.name" placeholder="Your name">
                         </div>
                         <div class="form-group">
-                        <label for="phone">Phone Number *</label>
-                     <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" title="Enter a valid phone number (10–15 digits)" required>
+                        <label for="phone" data-i18n="form.phone.label">Phone Number *</label>
+                     <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" title="Enter a valid phone number (10–15 digits)" required data-i18n-placeholder="ph.phone" placeholder="Enter phone number">
               </div>
                         <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="email" data-i18n="form.email.label">Email *</label>
+                            <input type="email" id="email" name="email" required data-i18n-placeholder="ph.email" placeholder="Your email address">
                         </div>
                         <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="5" minlength="20" required></textarea>
+                            <label for="message" data-i18n="form.message.label">Message *</label>
+                            <textarea id="message" name="message" rows="5" minlength="20" required data-i18n-placeholder="ph.message" placeholder="Write your message..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" data-i18n="form.submit">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -253,11 +254,11 @@
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul class="footer-links">
-                        <li><a href="services.html">AI Automation</a></li>
-                        <li><a href="services.html">Website Development</a></li>
-                        <li><a href="services.html">Web Application</a></li>
-                        <li><a href="services.html">Chatbots</a></li>
-                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="AI Automation.html">AI Automation</a></li>
+                        <li><a href="Website Development.html">Website Development</a></li>
+                        <li><a href="Web Application.html">Web Application</a></li>
+                        <li><a href="Chatbots.html">Chatbots</a></li>
+                        <li><a href="Digital Marketing.html">Digital Marketing</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -276,12 +277,12 @@
         </div>
     </footer>
 
+    
     <!-- Floating Chatbot -->
-     <!-- Floating Chatbot -->
     <style>
 .floating-chatbot {
   position: fixed;
-  bottom: 16px;
+  bottom: 50px;
   right: 50px;
   z-index: 9999;
 }
@@ -486,6 +487,7 @@
     <button id="chatbot-send">➤</button>
   </div>
 </div>
+<script src="js/i18n.js"></script>
 <script>
   // Theme toggle for desktop and mobile
   (function() {
